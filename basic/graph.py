@@ -41,9 +41,9 @@ class Graph:
 				self.s.push(node)
 			while self.s.isEmpty() != True:
 				_temp = self.s.pop()
-				if(_temp == target):
-					print("found: " + str(_temp))
-					return _temp
+				# if(_temp == target):
+				# 	print("found: " + str(_temp))
+				# 	return _temp
 				self.stackDFS(_temp, target)
 
 

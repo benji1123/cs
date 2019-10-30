@@ -39,7 +39,7 @@ class bst:
 		# return root-node with all children
 		return ref
 
-	def dfs(self, start, target):
+	def find(self, start, target):
 		if start.data == target:
 			print("found: " + str(target))
 			return target

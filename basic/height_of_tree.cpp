@@ -38,13 +38,13 @@ class Solution {
         int rightChildHeight = 0;
 
         // compute heights of left & right children
-        if(root->left != NULL)
+        if(root->left)
             leftChildHeight = height(root->left);
-        if(root->right != NULL)
+        if(root->right)
             rightChildHeight = height(root->right);
         
         // terminator
-        else if(root->left == NULL && root->right == NULL)
+        if(root->left == NULL && root->right == NULL)
             return 0;
         
         // height of each node is the larger-height of its children + 1
