@@ -12,6 +12,6 @@ public:
             prev = curr;
             curr = next;            
         }
-        return prev;
+        return prev // prev = HEAD after linked-list is reversed
     }
 };
